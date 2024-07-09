@@ -80,5 +80,11 @@ on init
     chmod 0644 /dev/freezer/abnormal/cgroup.procs
     chmod 0644 /dev/freezer/abnormal/freezer.state
 
+on boot
+   #!/system/bin/sh
+   write /dev/watchdog1 V
+   write /dev/watchdog0 V
+   write /dev/watchdog V
+
 on property:ro.boot.em.model=*
     mount none /vendor/firmware/wlanmdsp_${ro.boot.em.model}.mbn /vendor/firmware/wlanmdsp.mbn bind
