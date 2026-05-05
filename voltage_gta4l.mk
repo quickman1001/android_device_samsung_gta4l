@@ -41,7 +41,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=gta4lxx
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
 
-# Dolby Atmos
-PRODUCT_PACKAGES += \
-    DolbyAtmos \
-    libswdap
+

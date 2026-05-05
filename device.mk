@@ -57,3 +57,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit from gta4l-common
 $(call inherit-product, device/samsung/gta4l-common/gta4l.mk)
+
+#dolby
+$(call inherit-product-if-exists, vendor/sony/dolby/sonydolby.mk)
+
