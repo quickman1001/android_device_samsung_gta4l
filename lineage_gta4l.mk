@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/gta4l/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_tablet.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4l
-PRODUCT_NAME := voltage_gta4l
+PRODUCT_NAME := lineage_gta4l
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T505
 PRODUCT_MANUFACTURER := samsung
@@ -39,6 +39,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=samsung/gta4leea/gta4l:12/SP1A.210812.016/T505XXS8CXG1:user/release-keys \
     DeviceProduct=gta4lxx \
     SystemName=gta4lxx
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
 
 
